@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/asteroidfeed.css') }}">
+
+</head>
+
+<body>
+    {% include 'nav.html' %}
+
+    <div align="center">
+        <div align="center" id="form" class="col-md-10 jumbotron" style="color:black">
+            Start Date: <input type="text" id="start_date" name="start_date" placeholder="YYYY-MM-DD"><br><br> End Date: <input type="text" id="end_date" name="end_date" placeholder="YYYY-MM-DD (within a week of start date)"><br><br>
+            <input type="button" name="submit" class="btn btn-primary" value="Submit" onclick=formProcess()>
+        </div>
+    </div>
+
+    <script src="{{url_for('static', filename='js/asteroidfeed.js')}}"></script>
+    <script src="{{url_for('static', filename='js/stars.js')}}"></script>
+
+    <br><br>
+    <p id="heading" align="center"></p>
+    <div id="chart" align="center"></div>
+    <p id="astdata" align="center"></p>
+</body>
+
+</html>

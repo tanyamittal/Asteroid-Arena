@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/asteroidalert.css') }}">
+
+</head>
+
+<body>
+    {% include 'nav.html' %}
+
+    <br><br>
+    <p align="center"><b>MISS DISTANCES OF ASTEROIDS CLOSEST TO EARTH TODAY</b>
+    </p>
+    <div align="center" id="chart"></div>
+    <script src="{{url_for('static', filename='js/asteroidalert.js')}}"></script>
+    <script src="{{url_for('static', filename='js/stars.js')}}"></script>
+    <p id="label" align="center"></p>
+    <p id="conclusion" align="center"></p>
+</body>
+
+</html>

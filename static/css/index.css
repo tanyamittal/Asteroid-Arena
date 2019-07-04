@@ -1,0 +1,176 @@
+.hm-gradient {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.darken-grey-text {
+    color: #2E2E2E;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    align-content: center;
+    color: white;
+    background-color: black;
+}
+
+li {
+    font-size: medium !important;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%
+}
+
+.bar {
+    fill: #0080FF
+}
+
+.bar:hover {
+    fill: #003366
+}
+
+.text {
+    fill: white;
+    font-family: sans-serif
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+}
+
+
+/* Set the animation, color, size and hide the text */
+
+.intro {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    z-index: 1;
+    animation: intro 2s ease-out 1s;
+    color: yellowgreen;
+    font-weight: 400;
+    font-size: 300%;
+    opacity: 0;
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* Set the animation & hide the logo */
+
+.logo {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 1;
+    margin: auto;
+    animation: logo 9s ease-out 4s;
+    opacity: 0;
+}
+
+.logo svg {
+    width: inherit;
+}
+
+
+/* Scale the logo down and maintain it centered */
+
+@keyframes logo {
+    0% {
+        width: 18em;
+        transform: scale(2.75);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        width: 18em;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.1);
+        width: 18em;
+    }
+}
+
+p {
+    color: #FFFF82;
+}
+
+
+/* Set the font, lean the board, position it */
+
+#board {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    transform: perspective(300px) rotateX(25deg);
+    transform-origin: 50% 100%;
+    text-align: justify;
+    position: absolute;
+    margin-left: -9em;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 350%;
+    height: 50em;
+    width: 18em;
+    bottom: 0;
+    left: 50%;
+}
+
+#board:after {
+    position: absolute;
+    content: ' ';
+    bottom: 60%;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+
+/* Set the scrolling animation and position it */
+
+#content {
+    animation: scroll 100s linear 12s;
+    position: absolute;
+    top: 100%;
+}
+
+#title,
+#subtitle {
+    text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -170%;
+    }
+}

@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/css/mdb.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+</head>
+
+<body>
+    {% include 'nav.html' %}
+
+    <section class="intro">
+        The universe is a huge place,<br> exploring it would be fun....
+    </section>
+
+    <section class="logo">
+        <p style="font-size: 25px" align="center">What if you could know about what's happening in the outer space?</p>
+
+    </section>
+
+
+    <div id="board">
+        <div id="content">
+            <p id="title">WELCOME TO ASTEROID ARENA</p>
+            <p id="subtitle"></p>
+            <br>
+
+            <p align="center">Asteroids are small rocky objects found in the asteroid belt between Mars and Jupiter. The word asteroid literally means "star-like". Want to know more?<br> Let's go exploring!
+            </p>
+        </div>
+    </div>
+
+
+    <script src="{{url_for('static', filename='js/stars.js')}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.star {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+}
+
+.hm-gradient {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.darken-grey-text {
+    color: #2E2E2E;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    align-content: center;
+    color: white;
+    background-color: black;
+}
+
+li {
+    font-size: medium !important;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%
+}
+
+.bar {
+    fill: darkgoldenrod;
+}
+
+.bar:hover {
+    fill: rgba(192, 117, 5, 0.685);
+}
+
+.text {
+    fill: white;
+    font-family: sans-serif
+}
